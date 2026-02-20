@@ -1,8 +1,9 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
 <meta charset="UTF-8">
-<title>SpeechCare Premium</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Sharmistha Panigrahi | Speech Therapy & Special Education</title>
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
 </head>
@@ -14,42 +15,123 @@
     <h2>SpeechCare Clinic</h2>
     <nav>
         <a href="#about">About</a>
-        <a href="#appointment">Book</a>
+        <a href="#services">Services</a>
+        <a href="#experience">Experience</a>
+        <a href="#training">Training</a>
+        <a href="#education">Education</a>
+        <a href="#appointment">Appointment</a>
         <a href="#contact">Contact</a>
     </nav>
 </header>
 
 <section class="hero glass">
-    <div>
-        <h1>Speech Therapy & Special Education</h1>
-        <p>ASD | ADHD | Parent Counselling</p>
-        <button onclick="scrollToSection('appointment')">Book Appointment</button>
-    </div>
+    <h1>Speech Therapy & Special Education</h1>
+    <h3>For Children with ASD & ADHD</h3>
+    <p>Parent & Child Counselling | Inclusive Development Support</p>
+    <button onclick="scrollToSection('appointment')">Book Consultation</button>
 </section>
 
 <section id="about" class="glass section">
-    <h2>About</h2>
-    <p>Dedicated Special Educator (Intellectual Disability) with expertise in inclusive education, IEP planning, ASD and ADHD interventions.</p>
+    <h2>Professional Profile</h2>
+    <p>
+    Dedicated and compassionate Special Educator (Intellectual Disability) based in Kolkata, India.
+    Strong academic foundation and professional training in inclusive education,
+    neurodiversity, Autism Spectrum Disorder (ASD), ADHD, and developmental disabilities.
+    Experienced in psychometric assessment, individualized education planning (IEP),
+    parent counseling, behaviour management, and structured curriculum adaptation.
+    Committed to dignity, inclusion, and holistic child development.
+    </p>
+
+    <h3>Core Strengths</h3>
+    <ul>
+        <li>Strong rapport-building with neurotypical and special-needs children</li>
+        <li>Psychometric & developmental evaluation</li>
+        <li>Parent counseling & family collaboration</li>
+        <li>IEP planning & structured curriculum design</li>
+        <li>Positive behaviour management strategies</li>
+        <li>Multidisciplinary collaboration</li>
+    </ul>
+</section>
+
+<section id="services" class="glass section">
+    <h2>Services Offered</h2>
+    <div class="grid">
+        <div class="card">Speech Therapy for Autism Spectrum Disorder (ASD)</div>
+        <div class="card">ADHD Behaviour & Attention Support</div>
+        <div class="card">Parent & Child Counselling</div>
+        <div class="card">Individualized Education Plan (IEP) Formulation</div>
+        <div class="card">Psychometric Assessment & Developmental Evaluation</div>
+        <div class="card">Inclusive Classroom Adaptation</div>
+        <div class="card">Sensory Processing Support</div>
+        <div class="card">Emotional Regulation Techniques</div>
+        <div class="card">Task Analysis & Goal Setting</div>
+    </div>
+</section>
+
+<section id="experience" class="glass section">
+    <h2>Professional Experience</h2>
+    <h3>Shadow Teacher – Apeejay School, Salt Lake, Kolkata (2 Years)</h3>
+    <p>
+    Provided individualized academic and behavioural support to a child with special needs.
+    Assisted in curriculum adaptation, classroom inclusion, daily progress monitoring,
+    and emotional regulation development. Worked closely with teachers and parents
+    to ensure structured growth and skill enhancement.
+    </p>
+</section>
+
+<section id="training" class="glass section">
+    <h2>Certifications & Professional Development</h2>
+    <ul>
+        <li>Understanding Neurodiversity (5-Week MOOC) – CIQA, Netaji Subhas Open University (2023)</li>
+        <li>One-Day Workshop on Autism Spectrum Disorder – Manobithi, IIMCW (2025)</li>
+        <li>30-Day Capsule Course on Neurodiversity</li>
+        <li>UMEED Foundation Training (9-Hour Structured Program)</li>
+        <li>Mental Health Care in Developmental Disabilities</li>
+        <li>Legal Rights of Persons with Disabilities (UDID Awareness)</li>
+        <li>Autism Awareness & Core Characteristics</li>
+        <li>Sensory Processing in ASD</li>
+        <li>Rights-Based Inclusive Education Practices</li>
+    </ul>
+</section>
+
+<section id="education" class="glass section">
+    <h2>Educational Qualifications</h2>
+    <ul>
+        <li>Special B.Ed. (Intellectual Disability) – Netaji Subhas Open University (2021–2025)</li>
+        <li>M.Sc. Microbiology – North Orissa University (2007–2009)</li>
+        <li>B.Sc. Botany – Fakir Mohan University (2004–2007)</li>
+        <li>Higher Secondary (Science) – CHSE Odisha</li>
+        <li>Secondary Education – BSE Odisha</li>
+    </ul>
 </section>
 
 <section id="appointment" class="glass section">
     <h2>Book Appointment</h2>
     <form id="appointmentForm">
         <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email" required>
+        <input type="email" name="email" placeholder="Email Address" required>
         <input type="date" name="date" required>
         <input type="time" name="time" required>
-        <button type="submit">Confirm Booking</button>
+        <button type="submit">Confirm Appointment</button>
     </form>
 </section>
 
 <section id="contact" class="glass section">
-    <h2>Contact</h2>
-    <p>📞 98834 20656</p>
-    <p>📧 psharmistha91@gmail.com</p>
+    <h2>Contact Details</h2>
+    <p><strong>Phone:</strong> 033 3577 4493 | +91 98834 20656</p>
+    <p><strong>Email:</strong> psharmistha91@gmail.com</p>
+    <p><strong>Location:</strong> Kolkata, India</p>
+    <p><strong>Clinic Hours:</strong> 9:00 AM – 9:00 PM</p>
+    <p><strong>Languages:</strong> English, Hindi, Odia, Bengali</p>
 </section>
 
-<a href="https://wa.me/919883420656" class="whatsapp" target="_blank">WhatsApp</a>
+<footer class="glass">
+    © 2026 Sharmistha Panigrahi | Speech Therapy & Special Education Clinic
+</footer>
+
+<a href="https://wa.me/919883420656" class="whatsapp" target="_blank">
+    WhatsApp Booking
+</a>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
