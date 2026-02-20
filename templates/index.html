@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>SpeechCare Premium</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+</head>
+<body>
+
+<div id="particles-js"></div>
+
+<header class="glass">
+    <h2>SpeechCare Clinic</h2>
+    <nav>
+        <a href="#about">About</a>
+        <a href="#appointment">Book</a>
+        <a href="#contact">Contact</a>
+    </nav>
+</header>
+
+<section class="hero glass">
+    <div>
+        <h1>Speech Therapy & Special Education</h1>
+        <p>ASD | ADHD | Parent Counselling</p>
+        <button onclick="scrollToSection('appointment')">Book Appointment</button>
+    </div>
+</section>
+
+<section id="about" class="glass section">
+    <h2>About</h2>
+    <p>Dedicated Special Educator (Intellectual Disability) with expertise in inclusive education, IEP planning, ASD and ADHD interventions.</p>
+</section>
+
+<section id="appointment" class="glass section">
+    <h2>Book Appointment</h2>
+    <form id="appointmentForm">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <input type="email" name="email" placeholder="Email" required>
+        <input type="date" name="date" required>
+        <input type="time" name="time" required>
+        <button type="submit">Confirm Booking</button>
+    </form>
+</section>
+
+<section id="contact" class="glass section">
+    <h2>Contact</h2>
+    <p>📞 98834 20656</p>
+    <p>📧 psharmistha91@gmail.com</p>
+</section>
+
+<a href="https://wa.me/919883420656" class="whatsapp" target="_blank">WhatsApp</a>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
