@@ -3,17 +3,25 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Sharmistha Panigrahi | Speech Therapy & Special Education</title>
+<title>Sharmistha Panigrahi | Speech Therapy</title>
+
 <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
 <script src="https://cdn.jsdelivr.net/npm/particles.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
 
 <div id="particles-js"></div>
 
 <header class="glass">
-    <h2>SpeechCare Clinic</h2>
-    <nav>
+    <div class="logo">SpeechCare Clinic</div>
+
+    <div class="menu-toggle" onclick="toggleMenu()">
+        ☰
+    </div>
+
+    <nav id="nav-menu">
         <a href="#about">About</a>
         <a href="#services">Services</a>
         <a href="#experience">Experience</a>
@@ -108,11 +116,12 @@
 <section id="appointment" class="glass section">
     <h2>Book Appointment</h2>
     <form id="appointmentForm">
-        <input type="text" name="name" placeholder="Full Name" required>
-        <input type="email" name="email" placeholder="Email Address" required>
-        <input type="date" name="date" required>
-        <input type="time" name="time" required>
-        <button type="submit">Confirm Appointment</button>
+        <input type="text" id="name" placeholder="Full Name" required>
+        <input type="text" id="child" placeholder="Child Name (if applicable)">
+        <input type="text" id="concern" placeholder="Concern (ASD / ADHD / Speech Delay etc.)" required>
+        <input type="date" id="date" required>
+        <input type="time" id="time" required>
+        <button type="submit">Book via WhatsApp</button>
     </form>
 </section>
 
@@ -128,10 +137,6 @@
 <footer class="glass">
     © 2026 Sharmistha Panigrahi | Speech Therapy & Special Education Clinic
 </footer>
-
-<a href="https://wa.me/919883420656" class="whatsapp" target="_blank">
-    WhatsApp Booking
-</a>
 
 <script src="{{ url_for('static', filename='script.js') }}"></script>
 </body>
